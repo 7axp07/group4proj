@@ -7,8 +7,16 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.shape.Line;
+import javafx.scene.text.Text;
 
 public class MainController {
+
+    @FXML
+    private Line border1;
+
+    @FXML
+    private Line border2;
 
     @FXML
     private AnchorPane root;
@@ -24,6 +32,12 @@ public class MainController {
 
     @FXML
     private TextField timeTextfield;
+
+    @FXML
+    private Text feelingText;
+
+    @FXML
+    private TextField coffeeTextfield;
 
     @FXML
     void showCoffee(ActionEvent event) {
@@ -42,3 +56,5 @@ public class MainController {
     }
 
 }
+
+
