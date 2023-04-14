@@ -3,6 +3,7 @@ package com.company;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -73,6 +74,15 @@ public class MainController {
 
     @FXML
     private Text coffeeNameText;
+
+    @FXML
+    private CheckBox hasMilk;
+
+
+    @FXML
+    void hasMilk(ActionEvent event) {
+
+    }
 
 
     @FXML

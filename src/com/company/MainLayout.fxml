@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
@@ -90,6 +91,11 @@
                   <Font size="20.0" />
                </font>
             </Text>
+            <CheckBox fx:id="hasMilk" mnemonicParsing="false" onAction="#hasMilk" text="Milk?" textAlignment="CENTER" textFill="#191546" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </CheckBox>
          </children>
       </GridPane>
    </children>
