@@ -78,9 +78,13 @@ public class MainController {
     @FXML
     private CheckBox hasMilk;
 
-
+    boolean hasMilks = false;
     @FXML
     void hasMilk(ActionEvent event) {
+        boolean hasMilks = false;
+        if (hasMilk.isSelected()){
+            hasMilks = true;
+        }
 
     }
 
@@ -150,6 +154,46 @@ public class MainController {
         // 6-9 cappuccino + espresso
         // 0-5 - espresso doppio
 
+        if (hasMilks){
+            if (recommendValue<=5){
+                //espresso doppio image
+            }
+            else if (recommendValue<=9){
+                //cappuccino image
+            }
+            else if (recommendValue<=13){
+                //flat white image
+            }
+            else if (recommendValue<=17){
+                //latte image
+            }
+            else if (recommendValue<=21){
+                //latte macchiato image
+            }
+            else{
+                // no coffee image
+            }
+        }
+        else {
+            if (recommendValue<=5){
+                //espresso doppio image
+            }
+            else if (recommendValue<=9){
+                //espresso image
+            }
+            else if (recommendValue<=13){
+                //espresso image
+            }
+            else if (recommendValue<=17){
+                //americano image
+            }
+            else if (recommendValue<=21){
+                //americano image
+            }
+            else{
+                // no coffee image
+            }
+        }
 
         InputStream stream = new FileInputStream("src\\com\\company\\Przechwytywanie2.PNG");
 
@@ -161,8 +205,8 @@ public class MainController {
     void initialize(){
         moodPicker.getItems().addAll(com.company.Main.moods);
         timeOfDayPicker.getItems().addAll(Main.timesOfDay);
-    }
 
+    }
 }
 
 // https://www.google.com/search?q=coffee+types+pngs&source=lnms&tbm=isch&sa=X&ved=2ahUKEwizz5PflKn-AhUPAhAIHfHuAX0Q_AUoAXoECAEQAw&biw=1920&bih=969&dpr=1#imgrc=02X4R1GUMBxLqM&imgdii=m0kPFuGTdIUASM
