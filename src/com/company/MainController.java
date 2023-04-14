@@ -108,7 +108,7 @@ public class MainController {
 
         switch (timeSinceMorningSus) {
             case "10PM-12AM":
-                timeSinceMorning = 5;
+                timeSinceMorning = 50;
                 break;
             case "7PM-9PM":
                 timeSinceMorning = 4;
@@ -131,6 +131,15 @@ public class MainController {
         int coffeesHad = Integer.parseInt(coffeeTextfield.getText());
 
         int recommendValue = coffeesHad + mood * timeSinceMorning;
+
+
+        // >22 - no kawa
+        // 18-21 latte macchiato + americano
+        // 14-17 latte + americano
+        // 10-13 flat white + espresso
+        // 6-9 cappuccino + espresso
+        // 0-5 - espresso doppio
+
 
         InputStream stream = new FileInputStream("src\\com\\company\\Przechwytywanie2.PNG");
 
