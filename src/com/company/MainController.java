@@ -8,6 +8,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Line;
+import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 
 public class MainController {
@@ -30,6 +31,8 @@ public class MainController {
     @FXML
     private Button button;
 
+    @FXML
+    private Rectangle background;
 
     @FXML
     private Text feelingText;
