@@ -58,6 +58,23 @@ public class MainController {
     @FXML
     private ComboBox<String> timeOfDayPicker;
 
+
+    @FXML
+    private Text ingredientTitleText;
+
+    @FXML
+    private Text ingredientsRow1;
+
+    @FXML
+    private Text ingredientsRow2;
+
+    @FXML
+    private Text ingredientsRow3;
+
+    @FXML
+    private Text coffeeNameText;
+
+
     @FXML
     void showCoffee(ActionEvent event) throws FileNotFoundException {
         String chosen = moodPicker.getValue();
