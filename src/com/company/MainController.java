@@ -66,7 +66,7 @@ public class MainController {
         // awful mood equals 0
         // awesome mood equals 4
         //
-        InputStream stream = new FileInputStream("C:\\Pulpit\\Group 4 Project 2\\src\\com\\company\\Przechwytywanie2.PNG");
+        InputStream stream = new FileInputStream("src\\com\\company\\Przechwytywanie2.PNG");
         Image image = new Image(stream);
        coffeeImage.setImage(image);
     }
