@@ -20,11 +20,7 @@ public class Main extends Application {
 
     public static List<String> moods = new ArrayList<>();
 
-    public static ComboBox<String> moodPicker = new ComboBox<>();
-
-    public static TextField timeTextfield = new TextField();
-
-    public static Button button = new Button();
+    public static List<String> timesOfDay = new ArrayList<>();
 
     public static void main(String[] args) {
         launch(args);
@@ -38,7 +34,11 @@ public class Main extends Application {
         moods.add("Bad");
         moods.add("Awful");
 
-        moodPicker.getItems().addAll(Main.moods);
+        timesOfDay.add("6AM - 10AM");
+        timesOfDay.add("11AM-2PM");
+        timesOfDay.add("3PM-6PM");
+        timesOfDay.add("7PM-9PM");
+        timesOfDay.add("10PM-12AM");
 
 
         Parent root = FXMLLoader.load(getClass().getResource("MainLayout.fxml"));

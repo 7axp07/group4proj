@@ -45,7 +45,7 @@ public class MainController {
     private Text howMuchCoffeeText;
 
     @FXML
-    private ComboBox<?> timeOfDayPicker;
+    private ComboBox<String> timeOfDayPicker;
 
     @FXML
     void showCoffee(ActionEvent event) {
@@ -59,6 +59,8 @@ public class MainController {
     @FXML
     void initialize(){
         moodPicker.getItems().addAll(com.company.Main.moods);
+        timeOfDayPicker.getItems().addAll(Main.timesOfDay);
+
         // it should light up why does it not light up
         // wtf is initialize anyway
     }
