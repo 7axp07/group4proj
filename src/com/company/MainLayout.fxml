@@ -42,17 +42,17 @@
                   <Font name="System Italic" size="13.0" />
                </font>
             </Button>
-            <Text fx:id="feelingText" strokeType="OUTSIDE" strokeWidth="0.0" text="How are you feeling today?" wrappingWidth="100.984375" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <Text fx:id="feelingText" strokeType="OUTSIDE" strokeWidth="0.0" text="How are you feeling today?" textAlignment="CENTER" wrappingWidth="100.984375" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
                   <Font size="15.0" />
                </font>
             </Text>
-            <Text fx:id="timeText" strokeType="OUTSIDE" strokeWidth="0.0" text="What time of day is it?" wrappingWidth="100.984375" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <Text fx:id="timeText" strokeType="OUTSIDE" strokeWidth="0.0" text="What time of day is it?" textAlignment="CENTER" wrappingWidth="100.984375" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <font>
                   <Font size="15.0" />
                </font>
             </Text>
-            <Text fx:id="howMuchCoffeeText" strokeType="OUTSIDE" strokeWidth="0.0" text="How much coffee have you had? (in cups)" wrappingWidth="112.984375" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <Text fx:id="howMuchCoffeeText" strokeType="OUTSIDE" strokeWidth="0.0" text="How much coffee have you had? (in cups)" textAlignment="CENTER" wrappingWidth="112.984375" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                <font>
                   <Font size="15.0" />
                </font>
