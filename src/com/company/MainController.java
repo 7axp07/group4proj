@@ -13,6 +13,10 @@ import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+
 public class MainController {
 
     @FXML
@@ -55,15 +59,16 @@ public class MainController {
     private ComboBox<String> timeOfDayPicker;
 
     @FXML
-    void showCoffee(ActionEvent event) {
+    void showCoffee(ActionEvent event) throws FileNotFoundException {
         String chosen = moodPicker.getValue();
 
         // change chosen string into int
         // awful mood equals 0
         // awesome mood equals 4
         //
-       // Image image = new Image();
-       // coffeeImage.setImage(image);
+        InputStream stream = new FileInputStream("C:\\Pulpit\\Group 4 Project 2\\src\\com\\company\\Przechwytywanie2.PNG");
+        Image image = new Image(stream);
+       coffeeImage.setImage(image);
     }
 
     @FXML
