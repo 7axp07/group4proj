@@ -5,6 +5,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Line;
@@ -40,9 +42,11 @@ public class MainController {
     @FXML
     private TextField coffeeTextfield;
 
-
     @FXML
     private Text timeText;
+
+    @FXML
+    private ImageView coffeeImage;
 
     @FXML
     private Text howMuchCoffeeText;
@@ -57,6 +61,9 @@ public class MainController {
         // change chosen string into int
         // awful mood equals 0
         // awesome mood equals 4
+        //
+       // Image image = new Image();
+       // coffeeImage.setImage(image);
     }
 
     @FXML
@@ -64,8 +71,6 @@ public class MainController {
         moodPicker.getItems().addAll(com.company.Main.moods);
         timeOfDayPicker.getItems().addAll(Main.timesOfDay);
 
-        // it should light up why does it not light up
-        // wtf is initialize anyway
     }
 
 }
