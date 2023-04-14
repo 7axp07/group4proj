@@ -77,22 +77,71 @@ public class MainController {
 
     @FXML
     void showCoffee(ActionEvent event) throws FileNotFoundException {
-        String chosen = moodPicker.getValue();
+        String moodString = moodPicker.getValue();
+        int mood = 0;
 
-        // change chosen string into int
-        // awful mood equals 0
-        // awesome mood equals 4
-        //
+        switch (moodString) {
+            case "Awesome":
+                mood = 5;
+                break;
+            case "Happy":
+                mood = 4;
+                break;
+            case "Alright":
+                mood = 3;
+                break;
+            case "Bad":
+                mood = 2;
+                break;
+            case "Awful":
+                mood = 1;
+                break;
+            default:
+                mood = -1;// eror ror
+
+                break;
+        }
+
+
+        String timeSinceMorningSus = timeOfDayPicker.getValue();
+        int timeSinceMorning = 0;
+
+        switch (timeSinceMorningSus) {
+            case "10PM-12AM":
+                timeSinceMorning = 5;
+                break;
+            case "7PM-9PM":
+                timeSinceMorning = 4;
+                break;
+            case "3PM-6PM":
+                timeSinceMorning = 3;
+                break;
+            case "11AM-2PM":
+                timeSinceMorning = 2;
+                break;
+            case "6AM - 10AM":
+                timeSinceMorning = 1;
+                break;
+            default:
+                timeSinceMorning = -1;// eror ror
+
+                break;
+        }
+
+        int coffeesHad = Integer.parseInt(coffeeTextfield.getText());
+
+        int recommendValue = coffeesHad + mood * timeSinceMorning;
+
         InputStream stream = new FileInputStream("src\\com\\company\\Przechwytywanie2.PNG");
+
         Image image = new Image(stream);
-       coffeeImage.setImage(image);
+        coffeeImage.setImage(image);
     }
 
     @FXML
     void initialize(){
         moodPicker.getItems().addAll(com.company.Main.moods);
         timeOfDayPicker.getItems().addAll(Main.timesOfDay);
-
     }
 
 }
