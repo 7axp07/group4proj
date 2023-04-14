@@ -30,14 +30,22 @@ public class MainController {
     @FXML
     private Button button;
 
-    @FXML
-    private TextField timeTextfield;
 
     @FXML
     private Text feelingText;
 
     @FXML
     private TextField coffeeTextfield;
+
+
+    @FXML
+    private Text timeText;
+
+    @FXML
+    private Text howMuchCoffeeText;
+
+    @FXML
+    private ComboBox<?> timeOfDayPicker;
 
     @FXML
     void showCoffee(ActionEvent event) {
@@ -56,5 +64,7 @@ public class MainController {
     }
 
 }
+
+
 
 

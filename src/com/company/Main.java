@@ -39,9 +39,7 @@ public class Main extends Application {
         moods.add("Awful");
 
         moodPicker.getItems().addAll(Main.moods);
-        moodPicker.setOnAction(event -> {
-            String chosen = moodPicker.getValue();
-        });
+
 
         Parent root = FXMLLoader.load(getClass().getResource("MainLayout.fxml"));
         primaryStage.setScene(new Scene(root));
